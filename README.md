@@ -16,23 +16,26 @@
 
     ![계정생성](3.png)
 
-    #### 태그 삽입 파일
+    태그 삽입 파일
 
     레이아웃 > 기본레이아웃 > 공통 레이아옷(layout.html)
 
     추적태그의 위치는 ```</body>``` 위쪽
 
-## 2. 상품 리스트 
+## 2. 상품 리스트
+
 ### 상품별 적용
+
 변수명|설명
 ------------ | -------------
 {$list_wish_icon} | 위시리스트 추가
 {$basket_icon} | 장바구니 추가
 
-
 ### 게시판 이동
-* ```<a href="/front/php/b/board_list.php?board_no=4">이미지</a> ``` 리뷰
-```html
+
+```<a href="/front/php/b/board_list.php?board_no=4">이미지</a>``` 리뷰
+
+``` html
 <div class="icon">
     <div class="button">
         {$list_wish_icon}
@@ -41,12 +44,14 @@
     </div>
 </div> 
 ```
+
 ![정보표시](5.png)
 
 
 ## 3. 개인별 적립금등 정보 표시
 
 로그인된 사용자의 적립금, 장바구니, 관심상품, 쿠폰, 예치금 정보를 표시
+
 ```html
 <ul module="Layout_shoppingInfo">
     <!--@css(/css/module/layout/shoppingInfo.css)-->
@@ -59,3 +64,11 @@
 ```
 
 ![정보표시](4.png)
+
+## 4. cafe24 참고 link
+
+ - [쉬운주소](http://service-api.echosting.cafe24.com/Shopboard/index.php?url=BoardView&no=341274&bbs_no=12)
+ - [ftp 사용법](http://shop1.ecsupport.cafe24.com/board/free/read.html?no=749&board_no=5&page=5)
+ - [관리자메뉴얼](http://ecsupport.cafe24.com/web/upload/manual/ec/shp/shp0000001.html)
+ - [스마트디자인 가이드](http://sdsupport.cafe24.com/guide.html)
+ - [모듈리스트](http://sdsupport.cafe24.com/product/list.html?cate_no=61)
